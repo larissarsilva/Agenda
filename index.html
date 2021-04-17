@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="adicionar.css">
+  <title>Lista de Contatos</title>
+  <!-- Fontes -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+</style>
+
+</head>
+<body onload="main.listarContatos(); main.printartamanhoContatos()">
+        <div class="contatoPertence"> 
+        <div class="alinharpesquisa">  
+          <input id="nomePertence" 
+            placeholder="Pesquise um contato ..." 
+            
+          </input>
+          <button class="btnPertence" onClick="main.printPertence()">Pesquisar
+          <img             src="https://images.vexels.com/media/users/3/143356/isolated/preview/64e14fe0195557e3f18ea3becba3169b-lupa-de-pesquisa-by-vexels.png" alt="" style="width:15px"> 
+          </button>
+        </div>
+        <div id="contatoPertence"> </div>
+     </div>
+  <div class="boxAgenda">
+
+    <div class="boxFiltros">
+      <div id="parte1">
+        <!-- Adicionar e Remover elementos 
+          <input id="nome" placeholder="Digite um nome..." label="Digite um nome..."></input>      
+          <button class="btnadicionar"onclick="main.adicionarLista()" > ➕ Adicionar </button>
+          <button class="btndeletar" onclick="main.removerLista()" >Remover ❌ </button>
+        -->
+          <button id="ordenarLista" class="btnOrdenar"> 
+            <!--    onclick="printarOrdenada()" -->
+            Ordenar 
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2087/2087774.svg" alt="" style="width:15px;">       
+          </button>
+
+          <button class="btnOrdenar" id="btninverterListaOrdenada"> 
+            Inverter Ordenada 
+            <img src="https://image.flaticon.com/icons/png/512/36/36734.png" 
+            alt="" style="width:15px;">       
+          </button>
+
+          <button id="inverterLista" class="btninverter"> Inverter 
+            <img src="https://image.flaticon.com/icons/png/512/59/59417.png" alt=""
+            style="width:15px;">
+          </button>
+
+      </div> <!-- Fim parte 1 -->
+      
+  <div class="pesquisas">
+     <div class="contaOcorrencias">
+       <input id="nomeOcorrencias" 
+          placeholder="Pesquise quantas vezes um nome está na lista" label="Digite um nome...">
+       </input>
+       <button class="btnOcorrencias" 
+       onClick="main.printContaOcorrencias()">
+        Pesquisar
+        <img src="https://images.vexels.com/media/users/3/143356/isolated/preview/64e14fe0195557e3f18ea3becba3169b-lupa-de-pesquisa-by-vexels.png" alt="" style="width:15px">
+       </button>
+       <div id="qtdOcorrencias">Ocorrências:</div>
+     </div> <!-- fim contaOCorrencias -->    
+  </div> <!-- fim pesquisas -->
+ 
+</div> <!-- Fim filtros -->
+<div id="parte4"></div>
+<div id="listainvertida" class="OcultarlistaInvertida"></div>
+<div id="listaOrdenada" class="OcultarlistaOrdenada"></div>
+<div id="inverterListaOrdenada" class="OcultarlistaOrdenadaInvertida"></div>
+    </div> <!-- Fim box agendas -->
+
+<div id="tamanhoContatos"> Total 🙍‍♂️: </div>    
+
+
+<div class="footer">
+ <img src="https://image.flaticon.com/icons/png/512/37/37631.png" alt="" style="width:20px">:
+ Joao Pedro,Larissa Silva e Luiz Carlos
+
+</div>
+
+  <!-- Funções em JavaScript para auxiliar nas exibições --> 
+  <script src="ocultar.js"> </script>
+
+  <script src="kotlin.js"></script>
+	<script src="main.js"></script>
+</body>
+<style>
+  source
+</style>
+</html>

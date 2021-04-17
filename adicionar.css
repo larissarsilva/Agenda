@@ -1,0 +1,190 @@
+.boxAgenda{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#parte1{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  justify-content: space-between;
+}
+.boxFiltros{
+  border: 1px solid gainsboro;
+  width: 30%;
+}
+
+#parte4,#listainvertida,
+#listaOrdenada,#inverterListaOrdenada{
+  width: 70%;
+  padding-top: 50px;
+  
+}
+
+#parte4 li:hover{
+  background-color: #4b72d0;
+}
+
+.btnadicionar{
+  background-color: rgb(76 175 80);
+  border-radius: 10px;
+  border: none;
+  padding:10px;
+  color: white;
+  cursor: pointer;
+}
+
+.btndeletar, .btninverter{
+  background-color: #f44336;
+  border-radius: 10px;
+  border: none;
+  padding:10px;
+  color: white;
+  cursor: pointer;
+}
+
+.btnOrdenar, .btnPertence, .btnOcorrencias{
+  background-color: #2475dc;
+  border-radius: 10px;
+  border: none;
+  padding:10px;
+  color: white;
+  cursor: pointer;
+}
+.btnPertence{
+  border: 2px solid whitesmoke;
+  margin-left: 10px;
+}
+
+#nome, #nomePertence, #nomeOcorrencias{
+  padding:10px;
+}
+
+#nomePertence{
+  width: 80%;
+  background-color: #6f96f4;
+  border:none;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+.listarnomes,
+.listarnomesInvertido,
+.listarNomesOrdenado,
+.listarNomesOrdenadoInvertido,
+.pertenceALista { 
+  list-style-type: none;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pertenceALista{
+border: 1px solid black;
+}
+.btnPertence:hover{
+  background-color: whitesmoke;
+  border: 2px solid #4b72d0;
+  color: #4b72d0;
+  
+}
+
+.listarnomes, .listarnomesInvertido,
+.listarNomesOrdenado,
+.listarNomesOrdenadoInvertido
+{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contatoPertence{
+  background-color: #4b72d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.alinharpesquisa{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.OcultarlistaInvertida{
+  display: none;
+}
+
+.OcultarlistaOrdenada, .OcultarlistaOrdenadaInvertida{
+  display: none;
+}
+
+.contatoPertence{
+  padding-bottom: 50px;
+}
+
+.listateste{
+  display: none;
+}
+.detalhes{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+.pesquisas{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 133px;
+}
+
+#tamanhoContatos{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+body{
+  background-color: #f4f1f1;
+  margin:0px;
+}
+
+.circuloContato {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 2px solid #323232;
+background-color: #4b72d0;
+font-size: 40px;
+color: white;
+font-family: 'Montserrat', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.contatos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #4b72d0;
+  background-color: #4b72d0;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}

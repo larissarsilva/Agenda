@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes</title>
+  <style>
+   body{
+      background-color: #f4f1f1;
+      margin:0px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      height:100vh;
+   }
+   #nome{
+     border:2px solid white;
+     padding:10px;
+     width:500px;
+   }
+   #nome:hover{
+      background-color:#4b72d0;
+   }
+    #numero{
+     border:2px solid white;
+     padding:10px;
+     width:500px;
+   }
+   #numero:hover{
+     background-color:#4b72d0;
+   }
+   #inicial{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #323232;
+      background-color: #4b72d0;
+      font-size: 40px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .detalhes{
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content:space-between;
+     border:1px solid white;
+     border-radius:10px;
+     height:200px;
+     padding:25px;
+     padding-bottom:30px;
+   }
+   .btnVoltar{
+     position:fixed;
+     top:0;
+     background-color:rgb(76 175 80);
+     padding:20px;
+     border:none;
+     border-radius:10px;
+     cursor:pointer;
+     color:white;
+   }
+   .btnVoltar:hover{
+     border:5px solid white;
+   }
+  </style>
+</head>
+<body onload="printarDetalhes()">
+  <a href="https://agenda.larissarsilva.repl.co">
+  <button class="btnVoltar">
+    Voltar
+  <button>
+  </a>
+
+  <div class="detalhes">  
+   <div id="inicial">
+   </div>
+    <div id="nome">
+    </div>
+    <div id="numero">
+    </div>
+      <script>
+        var url = window.location.href; 
+        var resultado = url.split('?');
+        var nome =  resultado[1];
+        var numero = resultado[2];
+        var inicial = resultado[1][5];
+
+        function printarDetalhes(){
+          document.getElementById("inicial").innerHTML = inicial;
+          document.getElementById("nome").innerHTML = nome;
+          document.getElementById("numero").innerHTML = numero;
+
+        }
+
+    </script>
+    
+  </div>
+  <script src="kotlin.js"></script>
+	<script src="main.js"></script>
+</body>
+<style>
+  source
+</style>
+</html>
